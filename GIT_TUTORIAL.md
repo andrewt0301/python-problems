@@ -37,8 +37,44 @@ When it is downloaded, run it to install Git.
 To start working with a GitHub repository, you need to lone it to your local machine.
 To do this, run the following command in the terminal:
 
+    git clone https://github.com/andrewt0301/new_repository.git
+    
+Now your repository is cloned to your local file system:
+
+![](pictures/Picture03.png)
+
+### Adding files to a Git repository
+
+* Add place files to the "new_repository" folder in your local file system.
+  For example, it can be a file called "my_program.py".
+* Now you need to add it to the Git repository.
+  To do this, run the following commands:
+        
+      git add my_program.py
+      git commit -m "my_program.py is added"
+
+* Then you need to run the following command to send the changes to GitHub:
+
+      git push origin master    
+      
+Now your first file is uploaded to GitHub.
+
+### Getting fresh copies from GitHub
+
+When several users commit files to a repository, you need to get a fresh version of the files.
+To do this, you need to run the following command:
+
+    pit pull 
+
+### Updating files in a Git repository
+
+To update files, you need to run the same commands as for adding new files:
+
+      git add my_program.py
+      git commit -m "my_program.py is updated"
+      git push origin maste
 
 
 ### References
 
-1. Pro Git book (full reference) - https://git-scm.com/book/en/v2
+The full reference on how to use Git can be found in the Pro Git book - https://git-scm.com/book/en/v2.
